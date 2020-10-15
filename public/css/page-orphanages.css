@@ -1,0 +1,76 @@
+#pages-orphanages {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+aside {
+  width: clamp(24rem, 25vw, 44rem);
+  /* clamp funciona com o minimo de tamanho, o ideal e o máximo de tamanho que vc quer  */
+
+
+  background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
+  padding: clamp(3rem, 5vw, 8rem);
+  /* clamp funciona com o minimo de tamanho, o ideal e o máximo de tamanho que vc quer  */
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside h2 {
+  margin-top: 6.4rem;
+  font: 800 clamp(2rem, 5vw, 3.6rem) / 1.1 "Nunito", sans-serif;
+  /* clamp funciona com o minimo de tamanho, o ideal e o máximo de tamanho que vc quer  */
+}
+
+aside p {
+  margin-top: 2.4rem;
+  font: 1.6rem/1.1 "Nunito", sans-serif;
+}
+asise footer p {
+  margin-top: 0.8rem;
+}
+
+a.create-orphanage {
+  /* Posição fixa do botão adicionar  */
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+
+  background: #15c6d3;
+
+  /* Bordas arredondadas  */
+  border: 0;
+  border-radius: 2rem;
+
+  /* Tamanho do botão */
+  height: 6.4rem;
+  width: 6.4rem;
+
+  /* alinhamento do botão  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Transição suave do hover */
+  transition: background-color 0.2s;
+}
+
+a.create-orphanage:hover {
+  background: #17d6eb;
+}
+
+
+.animation-right{
+    animation-name: right ;
+    animation-duration:1200ms;
+}
+
+#mapid{
+    width:100%;
+    height: 100%;
+
+}
