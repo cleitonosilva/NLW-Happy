@@ -15,7 +15,20 @@ h1,
 #container {
   margin: auto;
 
-  width: 90%;
+  width: min(90%, 112rem);
+}
+
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 1000ms;
+}
+
+main h1 {
+  animation-delay: 1300ms;
+  font-size: clamp(4rem, 8vw, 8.4rem);
 }
 
 .visit a {
@@ -31,31 +44,42 @@ h1,
   justify-content: center;
 
   margin: auto;
-  
-  transition: background .4000ms;
-}
 
-.visit a:hover{
-background: #96feff;
+  transition: background 0.4ms;
 
-}
-
-#logo {
-  animation-delay: 50ms;
-}
-
-.location {
-  animation-delay: 1000ms;
-}
-
-main h1 {
-  animation-delay: 1300ms;
+  animation-delay: 2500ms;
 }
 
 .visit p {
   animation-delay: 2000ms;
 }
 
-.visit a {
-  animation-delay: 2500ms;
+.visit a:hover {
+  background: #96feff;
+}
+
+/* desktop version >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 760px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+    text-align: initial;
+  }
+
+  .location {
+    text-align: right;
+  }
+
+  main h1 {
+    font-weight: bold;
+    width: min(300px, 80%);
+  }
 }
