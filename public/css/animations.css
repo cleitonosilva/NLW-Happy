@@ -25,6 +25,17 @@
   }
 }
 
+
+@keyframes left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -41,3 +52,8 @@
     animation-fill-mode: backwards;
   }
   
+
+  .animation-left {
+    animation-name: left;
+    animation-duration: 2000ms;
+  }

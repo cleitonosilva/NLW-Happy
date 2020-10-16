@@ -1,0 +1,154 @@
+#pages-orphanage {
+  display: flex;
+  min-height: 100vh;
+}
+
+aside.sideBar {
+  position: fixed;
+  height: 100%;
+
+  padding: 32px 24px; /* ou 3.2rem e 2.4.rem refletindo sempre o :root{font size: 62.5%}  */
+  background: #15c3d6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.width-sideBar {
+  padding-left: 10.1rem;
+}
+
+aside.sideBar footer button {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  background: #12afcb;
+  border-radius: 1.6rem;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+aside.sideBar footer button:hover {
+  background: #17d6eb;
+}
+
+.animation-right {
+  animation-name: right;
+  animation-duration: 900ms;
+}
+
+/* details */
+
+.orphanage-details {
+  width: 70rem;
+  margin: 6.4rem auto;
+  background: white;
+  border: 1px solid #d3e2e5;
+
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.orphanage-details > img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover; /*muda o comportamento da imagem dentro da caixa proporcionalmente  */
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /*adapta e divide proporcionalmente as colunas e os quadrados */
+  column-gap: 1.6rem; /* espaço entre as imagens ou os quadrados */
+  margin: 16px, 40px;
+}
+
+.images button img {
+  height: 8.8rem;
+  width: 100%;
+  object-fit: cover; /*muda o comportamento da imagem dentro da caixa proporcionalmente  */
+}
+
+.images button {
+  border: 0;
+  background: none;
+
+  height: 8.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+
+  overflow: hidden;
+  opacity: 0.6;
+
+  transition: opacity 0.2s;
+}
+
+.images button:hover,
+.images button.active {
+  opacity: 1;
+}
+
+/* "orphanage-details-content" */
+
+.orphanage-details-content {
+  padding: 8rem;
+}
+
+.orphanage-details-content h1 {
+  color: #4d6f80;
+  font-size: 5.4rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.orphanage-details-content p {
+  color: #5c8599;
+  line-height: 1.6;
+  margin-top: 2.4rem;
+}
+
+/* map-container */
+.map-container {
+  margin-top: 6.4rem;
+  background: #e6f7fb;
+  border: 1px solid #b3dae2;
+  border-radius: 2rem;
+}
+#mapid {
+  width: 100%;
+  height: 28rem;
+}
+.map-container footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.map-container footer a {
+  color: #0089a5;
+  text-decoration: none;
+}
+
+.map-container .leaflet-container {
+  border-bottom: 1px solid #dde3f0;
+  border-radius: 2rem;
+}
+
+.orphanage-details-content hr {
+  /* aqui é setado o tamanho e o estilo da linha que separa o mapa */
+  width: 100%;
+  height: 3px;
+  border: none;
+  background: #d3e2e6;
+  margin: 6.4rem 0;
+}
