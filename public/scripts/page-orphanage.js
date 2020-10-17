@@ -52,5 +52,4 @@ function selectImage(event) {
 
   // adicionar a classe .active para o botão clicado
   button.classList.add('active')
-  console.log(buttons)
 }
