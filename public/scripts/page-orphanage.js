@@ -43,12 +43,12 @@ function selectImage(event) {
   // ----------------------------------------------------------------------------
 
   // selecionar a imagem clikada
-
+  const image = button.children[0]  // aqui eu estou me ereferindo aos filhos que é do tipo html coletion 
+  const imageContainer =document.querySelector(".orphanage-details > img") // aqui estou selecionando o meu comntainer que eu quero que renderize a imagem 
 
 
   // atualizar o container de limagem
-
-
+  imageContainer.src = image.src  // aqui estou dizendo que o src ( endereco) do container será igual ao endereço do button filhoç que é o button clikado
 
   // adicionar a classe .active para o botão clicado
   button.classList.add('active')
