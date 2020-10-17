@@ -28,7 +28,7 @@
 
 @keyframes left {
   from {
-    transform: translateX(100%);
+    transform: translateX(150%);
   }
 
   to {
@@ -53,7 +53,7 @@
   }
   
 
-  .animation-left {
+.animation-left {
     animation-name: left;
     animation-duration: 2000ms;
   }
